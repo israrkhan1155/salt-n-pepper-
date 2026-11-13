@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --red: #ed1c24;
+  --green: #28a745;
+  --lightblack: #0F0E0F;
+  --darkred: #ed1c24;
+}
+
+@font-face {
+    font-family: futurak;
+    src: url(../Assets/fonts/futurak\ \(1\).ttf);
+}
+
+@font-face {
+    font-family: aperculight;
+    src: url(../Assets/fonts/aperculight.otf);
+}
+
+@font-face {
+    font-family: buterbold;
+    src: url(../Assets/fonts/butlerbold.otf);
+}
+@font-face {
+    font-family: inter;
+    src: url(../Assets/fonts/inter.woff2);
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: inter;
+}
+
+/* nav  bar started */
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.logo img {
+    width: 165px;
+}
+
+.nav-bar-main { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-bar-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 5px 17px;
+}
+
+.Franchise-btn-1 {
+    background-color: transparent;
+    color: var(--white);
+    padding: 15px 20px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.Order-btn-1 {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.6rem;
+}
+
+.btn-arrow {
+    background-color: var(--white);
+    color: var(--red);
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+.menu-icon{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.menu {
+    display: none;
+}
+
+/* mobile header */
+
+.mobile-header-menu {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-icon i {
+    font-size: 1.6rem;
+}
+
+.mobile-logo-img {
+    width: 80px;
+}
+
+.mobile-order-btn {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+/* cursoal section started */
+
+.hero-section {
+    width: 100%;
+}
+
+.hero-section .hero-image {
+    width: 100%;
+}
+/* cursoal section ended */
+
+.brand-section {
+    padding: 50px 0px;
+}
+
+.brand-section > h1 {
+    font-family: aperculight;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4.5rem;
+
+}
+
+h1 .span-tag {
+   font-family: futurak;
+   font-size: 4.9rem;
+   letter-spacing: 2px;
+}
+
+.brand-section > p {
+    text-align: center;
+    font-size: 2rem;
+    margin: 15px 0px;
+    color:  rgba(255, 255, 255, 0.7);
+    font-family: aperculight;
+}
+
+.brand-cards {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-cards .card img {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-btn {
+    background-color: transparent;
+    color: var(--white);
+    padding: 15px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* franchise section started */
+
+.section-franchise {
+    background-color: var(--lightblack);
+    width: 100%;
+    padding: 100px;
+}
+
+
+.first-section-heading h1 {
+    text-align: center;
+    font-family: butlerbold;
+    font-size: 4.5rem;
+    margin: 10px 0;
+}
+
+.first-section-heading p {
+    text-align: center;
+    color:  rgba(255, 255, 255, 0.7);
+    font-size: 2rem;
+    font-family: aperculight;
+    padding: 5px 0;
+    margin-bottom: 35px;
+}   
+
+/* row section 1 started */
+
+.row-custom1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.brnch-imag {
+    padding: 0 10px;
+    width: 100%;
+    
+}
+
+.brnch-imag img {
+    width: 100%;
+}
+
+ .branch-box-content {
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    
+}
+
+small {
+    color: #ED1C24;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: aperculight;
+    margin-bottom: 8px;
+    display: block;
+    letter-spacing: 0.50em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: aperculight;
+    color: var(--white);
+    margin-bottom: 24px;
+    font-size: 3.3rem;
+    line-height: 38px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+h2 .span-tag {
+    font-family: futurak;
+}
+
+.branch-box-content p a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.branch-box-content p {
+    font-family: aperculight;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.2rem;
+    line-height: 1.2rem;
+}
+
+.branch-box-content .Franchise-btn-1 {
+    margin-top: 42px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3) ;
+}
+
+a .Franchise-btn-1 .btn-arrow {
+    background-color: var(--white);
+    color: var(--red);
+    padding: 8px 8px 8px 6px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+}
+
+/* row section 1 ended */
+
+
+/* row section 2 started*/
+
+.row-custom2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* row section 2 ended*/
+
+
+/* footer started*/
+
+.footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px;
+}
+
+.foot-logo {
+    width: 28%;
+    margin-top: 20px;
+}
+
+
+.foot-logo img {
+    width: 120px;
+    padding-bottom: 25px;
+}
+
+.foot-para {
+    color:  rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 24px;
+}
+
+.foot-useful-links a {
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    font-family: aperculight;
+}
+
+
+.foot-useful-links {
+    display: flex;
+}
+
+.foot-useful-links li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.footer-section  h3 {
+    padding-bottom: 24px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: butlerbold;
+}
+
+.footer-panel-2 li {
+    padding-bottom: 16px;
+    list-style-type: none;
+
+}
+
+.footer-panel-2 li a {
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    font-family: aperculight;
+}
+
+.foot-copyright {
+    height: 60px;
+    background-color: #212529;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.foot-copyright a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+}
+
+
+/* footer ended*/
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:1000px) {
+    .nav-bar-links {
+        display: none;
+    }
+    .menu {
+    display: block;
+}
+
+ /* brnad section */
+
+ .brand-section > h1 {
+    font-family: aperculight;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4.5rem;
+
+}
+
+h1 .span-tag {
+   font-family: futurak;
+   font-size: 4.5rem;
+   letter-spacing: 2px;
+}
+
+.brand-section > p {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0px;
+    color:  rgba(255, 255, 255, 0.7);
+    font-family: aperculight;
+}
+
+/* brand section endeed*/
+
+.first-section-heading {
+    display: flex;
+    flex-wrap:wrap; 
+}
+
+.row-custom1,.row-custom2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+
+}
+
+
+
+
+
+
+@media (max-width:500px) {
+    .nav-bar-main {
+        display: none;
+    }
+
+    .mobile-header-menu {
+        display: flex;
+    }
+
+
+ /* brnad section */
+
+ .brand-section > h1 {
+    font-family: aperculight;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5rem;
+
+}
+
+h1 .span-tag {
+   font-family: futurak;
+   font-size: 2.2rem;
+   letter-spacing: 1.5px;
+}
+
+.brand-section > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 10px 0px;
+    color:  rgba(255, 255, 255, 0.7);
+    font-family: aperculight;
+}
+
+/* brand section endeed*/
+
+
+
+
+.first-section-heading {
+    display: flex;
+    flex-wrap:wrap; 
+}
+
+    .row-custom1, .row-custom2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+
+}
+
+
+/* footer started*/
+
+.footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px;
+    flex-direction: column;
+}
+
+.foot-logo {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.foot-logo img {
+    width: 120px;
+    padding-bottom: 25px;
+}
+
+.foot-para {
+    color:  rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: ;
+    padding-bottom: 24px;
+}
+
+.foot-useful-links a {
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    font-family: aperculight;
+}
+
+
+.foot-useful-links {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.foot-useful-links li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.footer-section  h3 {
+    padding-bottom: 24px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: butlerbold;
+}
+
+.footer-panel-2 li {
+    padding-bottom: 16px;
+    list-style-type: none;
+    display: none;
+}
+
+.footer-panel-2 li a {
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    font-family: aperculight;
+}
+
+.foot-copyright {
+    height: 60px;
+    background-color: #212529;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-copyright a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+}
+
+
+/* footer ended*/
+
+
+}
