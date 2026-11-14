@@ -416,6 +416,8 @@ a .Franchise-btn-1 .btn-arrow {
 
 /* media queries */
 
+/* media queries */
+
 @media (max-width:1000px) {
     .nav-bar-links {
         display: none;
@@ -492,7 +494,7 @@ h1 .span-tag {
 
 h1 .span-tag {
    font-family: futurak;
-   font-size: 2.2rem;
+   font-size: 3rem;
    letter-spacing: 1.5px;
 }
 
@@ -506,7 +508,13 @@ h1 .span-tag {
 
 /* brand section endeed*/
 
+/* franchise section started */
 
+.section-franchise {
+    background-color: var(--lightblack);
+    width: 100%;
+    padding: 60px;
+}
 
 
 .first-section-heading {
@@ -514,12 +522,58 @@ h1 .span-tag {
     flex-wrap:wrap; 
 }
 
+
+.first-section-heading h1 {
+    text-align: center;
+    font-family: butlerbold;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
     .row-custom1, .row-custom2 {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 48px;
+    justify-content: center;
+    margin-bottom: 30px;
     flex-wrap: wrap;
+    gap: 20px;
 
+}
+
+
+h2 {
+    font-family: aperculight;
+    color: var(--white);
+    margin-bottom: 24px;
+    font-size: 3rem;
+    line-height: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h2 .span-tag {
+    font-family: futurak;
+}
+
+
+
+.branch-box-content .Franchise-btn-1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3) ;
+}
+
+.branch-box-content p {
+    line-height: 30px;
+}
+
+a .Franchise-btn-1 .btn-arrow {
+    background-color: var(--white);
+    color: var(--red);
+    padding: 8px 8px 8px 6px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
 }
 
 
@@ -610,6 +664,119 @@ h1 .span-tag {
 
 
 /* footer ended*/
+
+
+}
+
+
+
+@media (max-width:300px) {
+
+     /* brnad section */
+
+.brand-section {
+    padding: 40px 0px;
+}
+
+
+.brand-cards {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.brand-cards .card img {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .brand-section > h1 {
+    font-family: aperculight;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+
+}
+
+h1 .span-tag {
+   font-family: futurak;
+   font-size: 2.2rem;
+   letter-spacing: 1.2px;
+}
+
+.brand-section > p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    color:  rgba(255, 255, 255, 0.7);
+    font-family: aperculight;
+}
+
+/* brand section endeed*/
+
+/* franchise section started */
+
+.section-franchise {
+    background-color: var(--lightblack);
+    width: 100%;
+    padding: 50px;
+}
+
+
+.first-section-heading {
+    display: flex;
+    flex-wrap:wrap; 
+}
+
+
+.first-section-heading h1 {
+    text-align: center;
+    font-family: butlerbold;
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+    .row-custom1, .row-custom2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.branch-box-content p {
+    line-height: 30px;
+}
+
+
+h2 {
+    font-family: aperculight;
+    color: var(--white);
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+    line-height: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h2 .span-tag {
+    font-family: futurak;
+}
 
 
 }
